@@ -5,12 +5,14 @@ export const Menu = () => {
       description: "Espresso with steamed milk and a layer of frothed milk",
       price: 3.99,
       category: "Coffee",
+      src: "/src/images/cappuccino.jpg",
     },
     {
       name: "Croissant",
       description: "Flaky and buttery pastry",
       price: 2.99,
       category: "Bakery",
+      src: "/src/images/croissant.jpg",
     },
     {
       name: "Avocado Toast",
@@ -18,12 +20,14 @@ export const Menu = () => {
         "Toasted bread topped with mashed avocado, tomatoes, and herbs",
       price: 7.99,
       category: "Breakfast",
+      src: "/src/images/avocado-toast.jpg",
     },
     {
       name: "Quiche Lorraine",
       description: "Savory pie with bacon, cheese, and a creamy filling",
       price: 9.99,
       category: "Brunch",
+      src: "/src/images/quiche.jpg",
     },
     {
       name: "Chicken Caesar Wrap",
@@ -31,19 +35,14 @@ export const Menu = () => {
         "Grilled chicken, romaine lettuce, Parmesan cheese, and Caesar dressing wrapped in a tortilla",
       price: 8.99,
       category: "Lunch",
+      src: "/src/images/chicken-wrap.jpg",
     },
     {
       name: "Fruit Salad",
       description: "Assortment of fresh seasonal fruits",
       price: 4.99,
       category: "Healthy Options",
-    },
-    {
-      name: "Chocolate Brownie",
-      description:
-        "Rich and fudgy chocolate brownie served with a scoop of vanilla ice cream",
-      price: 5.99,
-      category: "Desserts",
+      src: "/src/images/fruit-salad.jpg",
     },
   ];
 
@@ -58,9 +57,14 @@ export const Menu = () => {
         .map(
           (menuItem) => `
         <div class="menu-item">
-          <h2>${menuItem.name}</h2>
-          <p>${menuItem.description}</p>
-          <span>$${menuItem.price}</span>
+          <picture>
+            <img src="${menuItem.src}" />
+          </picture>
+          <div class="menu-item-info">
+            <h2>${menuItem.name}</h2>
+            <p>${menuItem.description}</p>
+            <p class="price">$${menuItem.price}</p>
+          </div>
         </div>
       `
         )

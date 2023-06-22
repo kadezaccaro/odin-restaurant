@@ -4,17 +4,21 @@ export const Home = () => {
 
   homeContainer.innerHTML = `
     <div class="bg">
-      <h1 class="logo">Aria Café</h1>
+      <div class="welcome">
+        <h1>Harmonizing Culinary Delights </h1>
+        <p>
+          Welcome to Aria Café, where coffee meets harmony. Indulge in the exquisite  flavors of our handcrafted brews and enjoy a serene ambiance that elevates your  coffee experience.
+        </p>
+      </div>
       <img
-        src="/src/images/restuarant-interior.jpg"
+        src="/src/images/restaurant-interior.jpg"        
         alt="Interior view of an elegant restaurant with modern decor"
       />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis omnis
-        esse cumque qui aliquam laborum quibusdam similique, exercitationem odit
-        magnam provident dignissimos ab minima sapiente! Debitis odio ratione
-        animi qui!
-      </p>
+      <img
+        src="/src/images/restaurant-crowd.jpg"
+        alt="Interior view of an elegant restaurant with people sitting at tables"
+        loading="lazy"
+      />
     </div>
   `;
 
