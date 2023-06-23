@@ -21,7 +21,7 @@ export const Footer = () => {
           style="border: 0"
           loading="lazy"
           allowfullscreen
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJe9yyYAyiGWARJnuXrBe9BSY&key=AIzaSyBTgWy5qLs7kNUH62V8unr-tTdLIx5YH34"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJe9yyYAyiGWARJnuXrBe9BSY&key=${process.env.API_KEY}"
         >
         </iframe>
       </div>
