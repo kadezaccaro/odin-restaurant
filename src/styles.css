@@ -61,8 +61,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  padding: 40px 0 40px 0;
+  gap: 2rem;
+  padding: 2rem 1rem 2rem 1rem;
   background-color: var(--color-fg);
   border-bottom: 1px dotted var(--color-accent);
 }
@@ -78,14 +78,14 @@ nav {
 .btn-container {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 button {
   cursor: pointer;
   border: none;
   background-color: var(--color-accent);
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   font-family: Helvetica, Arial, sans-serif;
   font-size: var(--font-size-sm);
 }
@@ -97,22 +97,22 @@ button {
 .contact-container {
   display: flex;
   justify-content: center;
-  padding: 80px 16px 80px 16px;
+  padding: 5rem 1rem;
 }
 
 .bg {
   display: flex;
   flex-direction: column;
-  gap: 80px;
-  padding: 80px;
-  width: 1000px;
+  gap: 5rem;
+  padding: 5rem;
+  max-width: 1000px;
   border: 1px dotted var(--color-accent);
 }
 
 /* || HOME */
 
 .welcome h1 {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 /* || MENU */
@@ -128,16 +128,17 @@ button {
 }
 
 .menu-item-info {
-  padding-top: 16px;
+  padding-top: 1rem;
 }
 
 .menu-item h2 {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 picture {
   display: block;
-  height: 296px;
+  width: 100%;
+  height: 18.5rem;
   overflow: hidden;
 }
 
@@ -149,14 +150,14 @@ img {
 
 .price {
   color: var(--color-accent);
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 
 /* || CONTACT */
 
 .contact-container h1,
 .contact-container h2 {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 /* || FOOTER */
@@ -164,9 +165,9 @@ img {
 footer {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 1.5rem;
   background-color: var(--color-fg);
-  padding: 80px;
+  padding: 5rem 1rem;
   border-top: 1px dotted var(--color-accent);
 }
 
@@ -175,12 +176,44 @@ footer .bg {
   flex-direction: row;
   justify-content: space-between;
   padding: 0;
+  width: 1000px;
 }
 
 footer p {
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 
 iframe {
-  margin-top: 16px;
+  margin-top: 1rem;
+}
+
+/* || RESPONSIVE */
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 12.8px;
+  }
+
+  .bg {
+    padding: 5rem 2.5rem;
+  }
+
+  footer .bg {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .menu-container .bg {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-container h1 {
+    grid-column: span 1;
+  }
 }
