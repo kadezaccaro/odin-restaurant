@@ -6,6 +6,7 @@
   --color-accent: #fdba74;
   --color-body-text: #a1a1aa;
   --color-heading: white;
+  --color-btn-text: black;
 
   --font-size-lg: 3.0625rem;
   --font-size-logo: 2.5rem;
@@ -88,6 +89,7 @@ button {
   padding: 0.5rem 1rem;
   font-family: Helvetica, Arial, sans-serif;
   font-size: var(--font-size-sm);
+  color: var(--color-btn-text);
 }
 
 /* || CONTENT CONTAINERS */
