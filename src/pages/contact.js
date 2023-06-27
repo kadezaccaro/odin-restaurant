@@ -18,11 +18,11 @@ export const Contact = () => {
 
       <div>
         <h2>Email Us:</h2>
-        <p>General Inquiries: info@ariacafe.com</p>
-        <p>Customer Support: support@ariacafe.com</p>
+        <p>General Inquiries: <a href="#">info@ariacafe.com</a></p>
+        <p>Customer Support: <a href="#">support@ariacafe.com</a></p>
       </div>
 
-      <p>We value your feedback and look forward to serving you at Aria Cafe!</p>
+      <p>We value your feedback and look forward to serving you at Aria Café!</p>
     </div>
   `;
 
