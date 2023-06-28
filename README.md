@@ -6,6 +6,7 @@
 
 - Gain practical experience with Webpack by building a restaurant homepage
 - Deepen understanding of asset bundling and performance optimization
+- Fulfill the [assignment](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page) from The Odin Project
 
 <br>
 
